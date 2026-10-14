@@ -2,6 +2,9 @@
 
 A supervised 200-class image-classification project using the original **Caltech-UCSD Birds-200-2011 (CUB-200-2011)** dataset.
 
+**Course:** UE24CS352A — Machine Learning (mini project)  
+**Team:** Bhavesh (CS115) and Bhavyaa (CS116)
+
 Four models are compared:
 
 1. a small CNN trained from scratch (TensorFlow);
@@ -130,9 +133,11 @@ git commit -m "Add bird species classification project"
 gh repo create bird-species-classifier --private --source . --push
 ```
 
-Replace `YOUR_PRIVATE_REPOSITORY_URL` with the URL of your private GitHub repository. Do not commit the dataset, virtual environment, TensorFlow model weights (`models/*.keras`), or generated output files. `.gitignore` is configured to exclude them. The small DINOv2 classifier (`models/dinov2_base.joblib`) and `models/class_names.json` are committed so the demo runs straight after cloning; the DINOv2 backbone weights download automatically on first use. The classifier should be loaded with the scikit-learn version in `requirements.txt`'s range (it was saved with scikit-learn 1.9.1).
+This creates a private repository on your GitHub account and pushes the project (requires the GitHub CLI, `gh`, logged in with `gh auth login`).
 
-If model files are too large to submit through the required channel, provide them separately using a faculty-approved storage method and document the download steps in the README.
+**What is in the repository:** the code, documentation, report figures (`reports/figures/`), the trained models in `models/` (`baseline.keras`, `transfer.keras`, `finetune.keras`, `dinov2_base.joblib`, `class_names.json`), and each model's test metrics and classification report in `outputs/`. With the trained models included, the demo runs straight after cloning; the DINOv2 backbone weights download automatically on first use. `dinov2_base.joblib` was saved with scikit-learn 1.9.1, so load it with a matching version.
+
+**What is not in the repository:** the dataset, the virtual environment, cached DINOv2 features, the `*_final.keras` last-epoch copies, and other generated outputs. `.gitignore` excludes them. `.gitignore` also excludes `*.keras` files by default, so a newly trained Keras model must be added with `git add -f`.
 
 ## Measured results
 

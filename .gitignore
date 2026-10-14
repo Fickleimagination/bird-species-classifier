@@ -7,3 +7,5 @@ models/*.keras
 models/*.h5
 outputs/*
 !outputs/.gitkeep
+!outputs/*_metrics.json
+!outputs/*_classification_report.txt

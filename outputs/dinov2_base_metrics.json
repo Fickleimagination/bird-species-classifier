@@ -1,0 +1,10 @@
+{
+  "model": "dinov2_base",
+  "test_images": 5794,
+  "top1_accuracy": 0.8978253365550569,
+  "top5_accuracy": 0.9872281670693821,
+  "macro_f1": 0.8969569227710934,
+  "train_accuracy": 0.9815469179426777,
+  "validation_accuracy": 0.8855555555555555,
+  "C": 0.01
+}

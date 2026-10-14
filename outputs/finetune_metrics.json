@@ -1,0 +1,7 @@
+{
+  "model": "models/finetune.keras",
+  "test_images": 5794,
+  "top1_accuracy": 0.5749050742147048,
+  "top5_accuracy": 0.8581290990680014,
+  "macro_f1": 0.5792832660790193
+}

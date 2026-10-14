@@ -1,0 +1,7 @@
+{
+  "model": "models/baseline.keras",
+  "test_images": 5794,
+  "top1_accuracy": 0.03210217466344494,
+  "top5_accuracy": 0.1301346220227822,
+  "macro_f1": 0.018190238577836033
+}

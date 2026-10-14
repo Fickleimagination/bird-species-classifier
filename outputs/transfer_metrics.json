@@ -1,0 +1,7 @@
+{
+  "model": "models/transfer.keras",
+  "test_images": 5794,
+  "top1_accuracy": 0.4577148774594408,
+  "top5_accuracy": 0.772178115291681,
+  "macro_f1": 0.44377326752021873
+}
